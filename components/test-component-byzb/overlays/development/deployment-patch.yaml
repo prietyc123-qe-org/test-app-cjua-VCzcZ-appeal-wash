@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: test-component-byzb
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pkumari_org/build-e2e-ifeq-tenant/test-app-cjua/test-component-byzb@sha256:646c5f925e4445ca6a5290e7588aea01b1770d5a89bb18c8450027232c7ba871
+        name: my-python
+        resources: {}
+status: {}
